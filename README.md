@@ -1,6 +1,6 @@
-# ASP.NET Core SQL Integration API (Demo)
+# .NET Core SQL Integration API (Demo)
 
-Demo REST API built with ASP.NET Core that simulates an external
+Demo REST API built with .NET Core that simulates an external
 SQL-backed system consumed by NetSuite integrations.
 
 This project focuses on **architecture, integration patterns,
@@ -25,7 +25,7 @@ This is **demo-only code**.
 ## Integration Flow
 NetSuite (SuiteScript) *** see suitescript-sql-integration-demo repository
 ↓
-ASP.NET Core REST API
+.NET Core REST API
 ↓
 SQL Server (simulated)
 ↓
@@ -63,7 +63,7 @@ This reflects common ERP integration requirements.
 ## Scope
 
 Included:
-- ASP.NET Core REST API
+- .NET Core REST API
 - Controller / Service separation
 - Request and response contracts
 - Simulated SQL persistence
