@@ -89,3 +89,39 @@ This repository contains **demo code created from scratch**.
 
 This project exists solely to demonstrate
 integration architecture and technical decision-making.
+
+
+## Manual Testing
+
+This demo API was tested using GitHub Codespaces and Postman.
+
+Example request:
+
+POST /api/transactions  
+Headers:
+- Content-Type: application/json
+- x-api-key: demo-key
+
+Body:
+{
+  "customerCode": "CUST-001",
+  "externalReference": "SO-1001"
+}
+Response:
+
+{
+  "status": "OK",
+  "externalId": 4811,
+  "message": "Record created"
+}
+
+Sending the same request multiple times demonstrates idempotent behavior.
+Response:
+
+{
+  "status": "OK",
+  "externalId": 4811,
+  "message": "Record already exists"
+}
+
+
