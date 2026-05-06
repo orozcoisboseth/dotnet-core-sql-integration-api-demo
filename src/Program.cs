@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using DemoApi.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 /*
@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // Demo services
-builder.Services.AddSingleton<PrefacturaService>();
+builder.Services.AddSingleton<ExternalTransactionService>();
 
 var app = builder.Build();
 
